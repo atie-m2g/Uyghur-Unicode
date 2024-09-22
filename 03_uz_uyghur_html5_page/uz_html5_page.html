@@ -1,0 +1,615 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title> يۇنكود </title>
+    <style>
+        @font-face {
+            font-family: "UKIJ Ekran";
+            src: url("UKIJ Ekran.TTF");
+        }
+        body {
+            text-align: center;
+            font-size: 30px;
+            font-family: "UKIJ Ekran";
+        }
+        table {
+            border-collapse: collapse;
+            border: 2px solid rgb(140 140 140);
+            letter-spacing: 1px;
+            text-align: center;
+        }
+        th, td {
+            border: 1px solid rgb(160 160 160);
+            padding: 8px 10px;
+        }
+		#unicode_div {
+			font-size: 10px;
+			color: red;
+		}
+    </style>
+
+    <script>
+        function load() {
+        } 
+    </script>
+</head>
+
+<body onload="load();">
+    <div>
+        <table>
+            <thead>
+            <tr>
+                <th scope="col">يالغۇز</th>
+                <th scope="col">ئاياغ</th>
+                <th scope="col">ئوتتۇرا</th>
+                <th scope="col">باش</th>
+                <th scope="col"> <sup style="color: blue;font-size: 10px;">[1]</sup> ئاساسى رايۇن</th>
+                <th scope="col">#</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            <!--
+                Terminology
+
+                1) Uyghur Script Name & its call in English
+                Initial Form : باش
+                Medial Form  : ئوتتۇرا
+                Final Form   : ئاياغ
+                Isolated Form: يالغۇز
+
+                2) Unicode Arabic related Basic Multilingual Plane
+                =============================================================
+                | [1] Arabic plane                        : 0x0600 ~ 0x06FF |
+                | [2] Arabic Supplement plane             : 0x0750 ~ 0x077F |
+                | [3] Arabic Extended - B plane           : 0x0870 ~ 0x089F |
+                | [4] Arabic Extended - A plane           : 0x08A0 ~ 0x08FF |
+                | [5] Arabic Presentation Forms - A plane : 0xFB50 ~ 0xFDFF |
+                | [6] Arabic Presentation Forms - B plane : 0xFE70 ~ 0xFEFF |
+                =============================================================
+
+                3) Basic Multilingual Plane
+                =============================================================
+                | [1*] Arabic Plane                        : 0x0600 ~ 0x06FF |
+                =============================================================
+                        This Unicode plane ONLY include isolated form (Uyghur: يالغۇز) 
+                        of Uyghur Arabitc Alphbet character such as "ا", "ب", "ە" etc.
+                        This plane includes Arabic alphabet related characters. But have
+                        to notice that this area size is 256, but Uyghur alphabet ONLY 32
+                        character, more than Uyghur alphabet. In other word, some other
+                        character of this plane is Arabic Language related, but Uyghur related
+                        ONLY 32 characters.
+                    =============================================================
+                | [2*] Arabic Supplement plane             : 0x0750 ~ 0x077F  |
+                | [3*] Arabic Extended - B plane           : 0x0870 ~ 0x089F  |
+                | [4*] Arabic Extended - A plane           : 0x08A0 ~ 0x08FF  |
+                    =============================================================
+                    This Unicode plane ONLY includes Arabic Language related characters,
+                    NOT includes Uyghur related charecter. For Uyghur Language ignore this
+                    area.
+                    =============================================================
+                    | [5*] Arabic Presentation Forms - A Plan : 0xFB50 ~ 0xFDFF  |
+                    | [6*] Arabic Presentation Forms - B Plan : 0xFE70 ~ 0xFEFF  |
+                    =============================================================
+                    The two Unicode plane includes Arabic and Uyghur related charecters of
+                    Initial Form, Medial Form, Final Form and Isolated Form etc.
+                    The two Unicode planes, total size 0x33E (Decimal 830), but Uyghur
+                    alphabet 32*4 is enough. In other word, some other character of this
+                    planes is ONLY Arabic Language related, but Uyghur related ONLY 32*4
+                    characters.
+
+                3) Uyghur Language ( Local ) Abbreviation
+                UEY: Uyghur Erepche yeziq // short for Uyghur pronunciation
+                UAS: Uyghur Arabic Script // short for English pronunciation
+                
+                4) Unicode URI
+                https://symbl.cc/en/unicode-table/
+
+            -->
+
+        <!-- UEY/UAS: ئا -->
+        <tr>
+            <td>&#xFE8D; <div id="unicode_div">U+0xFE8D</div> </td>
+            <td>&#xFE8E; <div id="unicode_div">U+0xFE8E</div> </td>
+            <td></td>
+            <td></td>
+            <td>&#x0627; <div id="unicode_div">U+0x0627</div> </td>
+            <td>01</td>
+        </tr>
+        
+        <!-- UEY/UAS: ئە -->
+        <tr>
+            <td>&#xFEE9;<div id="unicode_div">U+0xFEE9</div> </td>
+            <td>&#xFEEA;<div id="unicode_div">U+0xFEEA</div> </td>
+            <td></td>
+            <td></td>
+            <td>&#x06D5; <div id="unicode_div">U+0x06D5</div> </td>
+            <td>02</td>
+        </tr>
+        
+            <!-- UEY/UAS: ب -->
+        <tr>
+            <td>&#xFE8F; <div id="unicode_div">U+0xFE8F</div> </td>
+            <td>&#xFE90; <div id="unicode_div">U+0xFE90</div> </td>
+            <td>&#xFE92; <div id="unicode_div">U+0xFE92</div> </td>
+            <td>&#xFE91; <div id="unicode_div">U+0xFE91</div> </td>
+            <td>&#x0628; <div id="unicode_div">U+0x0628</div> </td>
+            <td>03</td>
+        </tr>
+        
+        <!-- UEY/UAS: پ -->
+        <tr>
+            <td>&#xFB56; <div id="unicode_div">U+0xFB56</div> </td>
+            <td>&#xFB57; <div id="unicode_div">U+0xFB57</div> </td>
+            <td>&#xFB59; <div id="unicode_div">U+0xFB59</div> </td>
+            <td>&#xFB58; <div id="unicode_div">U+0xFB58</div> </td>
+            <td>&#x067E; <div id="unicode_div">U+0x067E</div> </td>
+            <td>04</td>
+        </tr>
+        
+        <!-- UEY/UAS: ت -->
+        <tr>
+            <td>&#xFE95; <div id="unicode_div">U+0xFE95</div> </td>
+            <td>&#xFE96; <div id="unicode_div">U+0xFE96</div> </td>
+            <td>&#xFE98; <div id="unicode_div">U+0xFE98</div> </td>
+            <td>&#xFE97; <div id="unicode_div">U+0xFE97</div> </td>
+            <td>&#x062A; <div id="unicode_div">U+0x062A</div> </td>
+            <td>05</td>
+        </tr>
+
+        <!-- UEY/UAS: ج-->
+        <tr>
+            <td>&#xFE9D; <div id="unicode_div">U+0xFE9D</div> </td>
+            <td>&#xFE9E; <div id="unicode_div">U+0xFE9E</div> </td>
+            <td>&#xFEA0; <div id="unicode_div">U+0xFEA0</div> </td>
+            <td>&#xFE9F; <div id="unicode_div">U+0xFE9F</div> </td>
+            <td>&#x062C; <div id="unicode_div">U+0x062C</div> </td>
+            <td>06</td>
+        </tr>
+        
+        <!-- UEY/UAS: چ -->
+        <tr>
+            <td>&#xFB7A; <div id="unicode_div">U+0xFB7A</div> </td>
+            <td>&#xFB7B; <div id="unicode_div">U+0xFB7B</div> </td> 
+            <td>&#xFB7D; <div id="unicode_div">U+0xFB7D</div> </td> 
+            <td>&#xFB7C; <div id="unicode_div">U+0xFB7C</div> </td>
+            <td>&#x0686; <div id="unicode_div">U+0x0686</div> </td>
+            <td>07</td>
+        </tr>
+        
+        <!-- UEY/UAS: خ-->
+        <tr>
+            <td>&#xFEA5; <div id="unicode_div">U+0xFEA5</div> </td>
+            <td>&#xFEA6; <div id="unicode_div">U+0xFEA6</div> </td>
+            <td>&#xFEA8; <div id="unicode_div">U+0xFEA8</div> </td>
+            <td>&#xFEA7; <div id="unicode_div">U+0xFEA7</div> </td>
+            <td></td>
+            <td>08</td>
+        </tr>
+        
+        <!-- UEY/UAS: ر-->
+        <tr>
+            <td></td>
+            <td>&#xFEAE;<div id="unicode_div">U+0xFEAE</div> </td>
+            <td></td>
+            <td>&#x0631;<div id="unicode_div">U+0x0631</div> </td>
+            <td></td>
+            <td>09</td>
+        </tr>
+        
+        <!-- UEY/UAS: د -->
+        <tr>
+            <td></td>
+            <td>&#xFEAA;<div id="unicode_div">U+0xFEAA</div> </td>
+            <td></td>
+            <td>&#x062F;<div id="unicode_div">U+0x062F</div> </td>
+            <td></td>
+            <td>10</td>
+        </tr>
+        
+        <!-- UEY/UAS: ژ -->
+        <tr>
+            <td></td>
+            <td>&#xFB8B; <div id="unicode_div">U+0xFB8B</div> </td> 
+            <td></td>
+            <td>&#xFB8A; <div id="unicode_div">U+0xFB8A</div> </td>
+            <td></td>
+            <td>11</td>
+        </tr>
+        
+        <!-- UEY/UAS: س-->
+        <tr>
+            <td>&#xFEB1; <div id="unicode_div">U+0xFEB1</div> </td>
+            <td>&#xFEB2; <div id="unicode_div">U+0xFEB2</div> </td>
+            <td>&#xFEB4; <div id="unicode_div">U+0xFEB4</div> </td>
+            <td>&#xFEB3; <div id="unicode_div">U+0xFEB3</div> </td>
+            <td></td>
+            <td>12</td>
+        </tr>
+
+        <!-- UEY/UAS: ش-->
+        <tr>
+            <td>&#xFEB5; <div id="unicode_div">U+0xFEB5</div> </td>
+            <td>&#xFEB6; <div id="unicode_div">U+0xFEB6</div> </td>
+            <td>&#xFEB8; <div id="unicode_div">U+0xFEB8</div> </td> 
+            <td>&#xFEB7; <div id="unicode_div">U+0xFEB7</div> </td>
+            <td></td>
+            <td>13</td>
+        </tr>
+        
+        <!-- UEY/UAS: غ-->
+        <tr>
+            <td>&#xFECD; <div id="unicode_div">U+0xFECD</div> </td>
+            <td>&#xFECE; <div id="unicode_div">U+0xFECE</div> </td> 
+            <td>&#xFED0; <div id="unicode_div">U+0xFED0</div> </td>
+            <td>&#xFECF; <div id="unicode_div">U+0xFECF</div> </td>
+            <td></td>
+            <td>14</td>
+        </tr>
+        
+        <!-- UEY/UAS: ف- -->
+        <tr>
+            <td>&#xFED1; <div id="unicode_div">U+0xFED1</div> </td>
+            <td>&#xFED2; <div id="unicode_div">U+0xFED2</div> </td>
+            <td>&#xFED4; <div id="unicode_div">U+0xFED4</div> </td>
+            <td>&#xFED3; <div id="unicode_div">U+0xFED3</div> </td>
+            <td></td>
+            <td>15</td>
+        </tr>
+
+        <!-- UEY/UAS: ق -->
+        <tr>
+            <td>&#xFED5; <div id="unicode_div">U+0xFED5</div> </td>
+            <td>&#xFED6; <div id="unicode_div">U+0xFED6</div> </td>
+            <td>&#xFED8; <div id="unicode_div">U+0xFED8</div> </td>
+            <td>&#xFED7; <div id="unicode_div">U+0xFED7</div> </td>
+            <td></td>
+            <td>16</td>
+        </tr>
+
+        <!-- UEY/UAS: ك -->
+        <tr>
+            <td>&#xFED9; <div id="unicode_div">U+0xFED9</div> </td>
+            <td>&#xFEDA; <div id="unicode_div">U+0xFEDA</div> </td>
+            <td>&#xFEDC; <div id="unicode_div">U+0xFEDC</div> </td>
+            <td>&#xFEDB; <div id="unicode_div">U+0xFEDB</div> </td>
+            <td></td>
+            <td>17</td>
+        </tr>
+        
+        <!-- UEY/UAS: گ -->
+        <tr>
+            <td>&#xFB92; <div id="unicode_div">U+0xFB92</div> </td>
+            <td>&#xFB93; <div id="unicode_div">U+0xFB93</div> </td>
+            <td>&#xFB95; <div id="unicode_div">U+0xFB95</div> </td>
+            <td>&#xFB94; <div id="unicode_div">U+0xFB94</div> </td>
+            <td>&#x06AF; <div id="unicode_div">U+0x06AF</div> </td>
+            <td>18</td>
+        </tr>
+        
+        <!-- UEY/UAS: ڭ -->
+        <tr>
+            <td>&#xFBD3; <div id="unicode_div">U+0xFBD3</div> </td>
+            <td>&#xFBD4; <div id="unicode_div">U+0xFBD4</div> </td> 
+            <td>&#xFBD6; <div id="unicode_div">U+0xFBD6</div> </td> 
+            <td>&#xFBD5; <div id="unicode_div">U+0xFBD5</div> </td> 
+            <td>&#x06AD; <div id="unicode_div">U+0x06AD</div> </td> 
+            <td>19</td>
+        </tr>
+        
+            <!-- UEY/UAS: ل -->
+        <tr>
+            <td>&#xFEDD; <div id="unicode_div">U+0xFEDD</div> </td>
+            <td>&#xFEDE; <div id="unicode_div">U+0xFEDE</div> </td>
+            <td>&#xFEE0; <div id="unicode_div">U+0xFEE0</div> </td>
+            <td>&#xFEDF; <div id="unicode_div">U+0xFEDF</div> </td>
+            <td>&#x0644; <div id="unicode_div">U+0x0644</div> </td>
+            <td>20</td>
+        </tr>
+        
+            <!-- UEY/UAS: م -->
+        <tr>
+            <td>&#xFEE1;<div id="unicode_div">U+0xFEE1</div> </td>
+            <td>&#xFEE2;<div id="unicode_div">U+0xFEE2</div> </td>
+            <td>&#xFEE4;<div id="unicode_div">U+0xFEE4</div> </td>
+            <td>&#xFEE3;<div id="unicode_div">U+0xFEE3</div> </td>
+            <td>&#x0645;<div id="unicode_div">U+0x0645</div> </td>
+            <td>21</td>
+        </tr>
+        
+            <!-- UEY/UAS: ن -->
+        <tr>
+            <td>&#xFEE5; <div id="unicode_div">U+0xFEE5</div> </td>
+            <td>&#xFEE6; <div id="unicode_div">U+0xFEE6</div> </td>
+            <td>&#xFEE8; <div id="unicode_div">U+0xFEE8</div> </td>
+            <td>&#xFEE7; <div id="unicode_div">U+0xFEE7</div> </td>
+            <td>&#x0646; <div id="unicode_div">U+0x0646</div> </td>
+            <td>22</td>
+        </tr>
+        
+            <!-- UEY/UAS: ھ -->
+        <tr>
+            <td></td>
+            <td></td>
+            <td>&#xFBAB; <div id="unicode_div">U+0xFBAB</div> </td>
+            <td>&#xFBAA; <div id="unicode_div">U+0xFBAA</div> </td>
+            <td>&#x06BE; <div id="unicode_div">U+0x06BE</div> </td>
+            <td>23</td>
+        </tr>
+        
+        <tr>
+            <td>&#xFEED; <div id="unicode_div">U+0xFEED</div> </td>
+            <td>&#xFEEE; <div id="unicode_div">U+0xFEEE</div> </td>
+            <td></td>
+            <td></td>
+            <td>&#x0648; <div id="unicode_div">U+0x0648</div> </td>
+        <td>15</td>
+        </tr>
+        
+        <tr>
+            <td>&#xFBD7; <div id="unicode_div">U+0xFBD7</div> </td>
+            <td>&#xFBD8; <div id="unicode_div">U+0xFBD8</div> </td>
+            <td></td>
+            <td></td>
+            <td>&#x06C7; <div id="unicode_div">U+0x06C7</div> </td>
+            <td>16</td>
+        </tr>
+        
+        <tr>
+            <td>&#xFBD9; <div id="unicode_div">U+0xFBD9</div> </td>
+            <td>&#xFBDA; <div id="unicode_div">U+0xFBDA</div> </td> 
+            <td></td>
+            <td></td>
+            <td>&#x06C6; <div id="unicode_div">U+0x06C6</div> </td>
+        <td>17</td>
+        </tr>
+        <tr>
+            <td>&#xFBDB; <div id="unicode_div">U+0xFBDB</div> </td>
+            <td>&#xFBDC; <div id="unicode_div">U+0xFBDC</div> </td> 
+            <td></td>
+            <td></td>
+            <td>&#x06C8; <div id="unicode_div">U+0x06C8</div> </td>
+        <td>18</td>
+        </tr>
+        <tr>
+            <td>&#xFBDE; <div id="unicode_div">U+0xFBDE</div> </td>
+            <td>&#xFBDF; <div id="unicode_div">U+0xFBDF</div> </td>
+            <td></td>
+            <td></td>
+            <td>&#x06CB; <div id="unicode_div">U+0x06CB</div> </td>
+            <td>19</td>
+        </tr>
+        
+        <tr>
+            <td>&#xFBE4; <div id="unicode_div">U+0xFBE4</div> </td>
+            <td>&#xFBE5; <div id="unicode_div">U+0xFBE5</div> </td> 
+            <td>&#xFBE7; <div id="unicode_div">U+0xFBE7</div> </td> 
+            <td>&#xFBE6; <div id="unicode_div">U+0xFBE6</div> </td>
+            <td></td>
+            <td>20</td>
+        </tr>
+        <tr>
+            <td>&#xFEEF; <div id="unicode_div">U+0xFEEF</div> </td>
+            <td>&#xFEF0; <div id="unicode_div">U+0xFEF0</div> </td>
+            <td>&#xFBE9; <div id="unicode_div">U+0xFBE9</div> </td>
+            <td>&#xFBE8; <div id="unicode_div">U+0xFBE8</div> </td>
+            <td>&#x0649; <div id="unicode_div">U+0x0649</div> </td>
+        <td>21</td>
+        </tr>
+        <tr>
+            <td>&#xFEF1; <div id="unicode_div">U+xFEF1</div> </td>
+            <td>&#xFEF2; <div id="unicode_div">U+xFEF2</div> </td>
+            <td>&#xFEF4; <div id="unicode_div">U+xFEF4</div> </td>
+            <td>&#xFEF3; <div id="unicode_div">U+xFEF3</div> </td>
+            <td>&#x064A; <div id="unicode_div">U+x064A</div> </td>
+            <td>22</td>
+        </tr>
+        
+        <tr>
+        <td>&#xFEFB; <div id="unicode_div">U+0xFEFB</div></td>
+        <td>&#xFEFC; <div id="unicode_div">U+0xFEFC</div></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>23</td>
+        </tr>
+        
+        <tr>
+        <td>&#x0626; <div id="unicode_div">U+0x0626</div> </td>
+        <td>&#xFE8C; <div id="unicode_div">U+0xFE8C</div> </td>
+        <td></td>
+        <td>&#xFE8B; <div id="unicode_div">U+0xFE8B</div> </td>
+        <td></td>
+        <td>14</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>&#xFBEB; <div id="unicode_div">U+0xFBEB</div> </td>
+            <td></td>
+            <td>&#xFBEA; <div id="unicode_div">U+0xFBEA</div> </td>
+            <td></td>
+            <td>25</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>&#xFBED; <div id="unicode_div">U+0xFBED</div> </td>
+            <td></td>
+            <td>&#xFBEC; <div id="unicode_div">U+0xFBEC</div> </td>
+            <td></td>
+            <td>26</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>&#xFBEF; <div id="unicode_div">U+0xFBEF</div> </td>
+            <td></td>
+            <td>&#xFBEE; <div id="unicode_div">U+0xFBEE</div> </td>
+            <td></td>
+            <td>27</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>&#xFBF1; <div id="unicode_div">U+0xFBF1</div> </td>
+            <td></td>
+            <td>&#xFBF0; <div id="unicode_div">U+0xFBF0</div> </td>
+            <td></td>
+            <td>28</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>&#xFBF5; <div id="unicode_div">U+0xFBF5</div> </td>
+            <td></td>
+            <td>&#xFBF4; <div id="unicode_div">U+0xFBF4</div> </td>
+            <td></td>
+            <td>29</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>&#xFBF3; <div id="unicode_div">U+0xFBF3</div> </td>
+            <td></td>
+            <td>&#xFBF2; <div id="unicode_div">U+0xFBF2</div> </td>
+            <td></td>
+            <td>30</td>
+            </tr>
+        
+        <tr>
+            <td>&#xFBF6; <div id="unicode_div">U+0xFBF6</div> </td>
+            <td>&#xFBF7; <div id="unicode_div">U+0xFBF7</div> </td>
+            <td></td>
+            <td>&#xFBF8; <div id="unicode_div">U+0xFBF8</div> </td>
+            <td></td>
+            <td>31</td>
+        </tr>
+        
+        <tr>
+            <td>&#xFBF9; <div id="unicode_div">U+0xFBF9</div> </td>
+            <td>&#xFBFA; <div id="unicode_div">U+0xFBFA</div> </td>
+            <td></td>
+            <td>&#xFBFB; <div id="unicode_div">U+0xFBFB</div> </td>
+            <td></td>
+            <td>32</td>
+        </tr>
+        
+        <tr>
+            <td></td>
+            <td>&#x060C; <div id="unicode_div">U+0x060C</div> </td>
+            <td>&#x0640; <div id="unicode_div">U+0x0640</div> </td>
+            <td>&#x061B; <div id="unicode_div">U+0x061B</div> </td>
+            <td></td>
+            <td>33</td>
+        </tr>
+        <tr>
+            <td>&#x203A; <div id="unicode_div">U+0x203A</div> </td>
+            <td>&#x2039; <div id="unicode_div">U+0x2039</div> </td>
+            <td>&#x061F; <div id="unicode_div">U+0x061F</div> </td>
+            <td>&#x2026; <div id="unicode_div">U+0x2026</div> </td>
+            <td></td>
+            <td>34</td>
+        </tr>
+        <tr>
+            <td>&#x2014; <div id="unicode_div">U+0x2014</div> </td>
+            <td>&#x00AB; <div id="unicode_div">U+0x00AB</div> </td>
+            <td>&#x00BB; <div id="unicode_div">U+0x00BB</div> </td>
+            <td>&#x066D; <div id="unicode_div">U+0x066D</div> </td>
+            <td></td>
+            <td>35</td>
+        </tr>
+    </table>
+    </div>
+
+    <br/>
+    <hr/>
+
+    <div>
+        <p style="text-align:left; font-size: 25px;">
+            پايدلنىش [Uyghur]:
+            <div style="text-align:left; font-size: 15px;">
+                <ol>
+                    <li> <span style="color: red;">0x0600 ~ 0x06FF</span> ئەرەپچە رايۇن :
+                        <br/>
+                        بۇ رايۇن پەقەتلا يالغۇز ھەرىپنىلا ئۆزئىچىگە ئالىدۇ ؛ مەسىلەن
+                        ا، ب دېگەندەك . بۇ رايۇنن 256 چوڭلۇقتا . ئەممە ئۇيغۇرچىدە 32 
+                        ھەرىپلا بولغاچقا، بۇ رايۇندىكى باشقا ھەرىپلەر ئۇيغۇرچە بىلەن 
+                        مۇناسىۋەتسز ؛
+                        <br/>
+                        <span style="color: red;"> بۇ رايۇن ئۇيغۇرتىلى بىلەن مۇناسىۋەتتلىك ؛  </span>
+                    </li>
+                    <li> 0x0750 ~ 0x077F  ئەرەپچە ياردەمچە رايۇن : </li>
+                    <li> 0x0870 ~ 0x089F  ئەرەپچە كىڭەيتىلگەن [ئا] رايۇن : </li>
+                    <li> 0x08A0 ~ 0x08FF  ئەرەپچە كىڭەيتىلگەن [ب] رايۇن :
+                        <br/>
+                        بۇ 2-، 3-، 4- رايۇن پەقەتلا ئەرەپ يېزىقى بىلەنلا مۇناسىۋەتتلىك ؛
+                        ئۇيغۇرچە ھەرىپ - سۆزلىكلەر بۇ ئۈچ رايۇن بىلەن مۇناسۋەتسز ؛
+                    </li>
+                    <li> <span style="color: red;">0xFB50 ~ 0xFDFF</span> ئەرەپچە يېزىچە [ئا] رايۇن :  </li>
+                    <li> <span style="color: red;">0xFE70 ~ 0xFEFF</span> ئەرەپچە يېزىچە [ب] رايۇن : 
+                        <br/>
+                        بۇ 5- ، 6- رايۇن ئۇيغۇرچە، ئەرەپچە ھەرىپلەرنى ئۆز ئىچىگە ئالىدۇ ؛
+                        ھەرىپلەر باش ، ئوتتۇرا ، ئاياغ ۋە يالغۇز ھەرىپلەر ؛
+                        بۇ ئىككى رايۇن 830 چوڭلۇقتا ، ئەمما ئۇيغۇرچە 32*4 چوڭلۇق بولسىلا كۇپايە ؛
+                        شۇڭا ، بۇ رايۇندىكى باشقا ھەرىپلەر ئۇيغۇرچە بىلەن مۇناسىۋەتسز ؛
+                        <br/>
+                        <span style="color: red;"> بۇ رايۇن ئۇيغۇرتىلى بىلەن مۇناسىۋەتتلىك ؛  </span>
+                    </li>
+                </ol>
+                <br>
+            </div>
+        </p>    
+    </div>
+    <div>
+        <p style="text-align:left; font-size: 25px;">
+            References [English]:
+            <div style="text-align:left; font-size: 15px;">
+                <ol>
+                    <li>Arabic plane : <span style="color: red;">0x0600 ~ 0x06FF</span>
+                        <br/>
+                        This Unicode plane ONLY include isolated form (Uyghur: يالغۇز) 
+                        of Uyghur Arabitc Alphbet character such as "ا", "ب", "ە" etc.
+                        This plane includes Arabic alphabet related characters. But have
+                        to notice that this area size is 256, but Uyghur alphabet ONLY 32
+                        character, more than Uyghur alphabet. In other word, some other
+                        character of this plane is Arabic Language related, but Uyghur related
+                        ONLY 32 characters.
+                        <br/>
+                        <span style="color: red;">The Unicode plane is Uyghur related plane.</span>
+                    </li>
+                    <li>Arabic Supplement plane : 0x0750 ~ 0x077F</li>
+                    <li>Arabic Extended - B plane : 0x0870 ~ 0x089F </li>
+                    <li>Arabic Extended - A plane : 0x08A0 ~ 0x08FF
+                        <br/>
+                        The Unicode plane 2, 3, 4 ONLY includes Arabic Language related characters,
+                        NOT includes Uyghur related charecter. For Uyghur Language ignore the three
+                        area.
+                    </li>
+                    <li>Arabic Presentation Forms - A plane : <span style="color: red;">0xFB50 ~ 0xFDFF</span> </li>
+                    <li>Arabic Presentation Forms - B plane : <span style="color: red;">0xFE70 ~ 0xFEFF</span>
+                        <br/>
+                        The 5, 6,  two Unicode planes includes Arabic and Uyghur related charecters
+                        of Initial Form, Medial Form, Final Form and Isolated Form etc. The two 
+                        Unicode planes, total size 0x33E (Decimal 830), but Uyghur alphabet 32*4
+                        is enough. In other word, some other character of this planes is ONLY Arabic
+                        Language related, but Uyghur related ONLY 32*4 characters.
+                        <br/>
+                        <span style="color: red;">The Unicode plane is Uyghur related plane.</span>
+                    </li>
+                </ol>
+                <br>
+            </div>
+        </p>
+    </div>
+    <div style="text-align:left;">
+            References:
+            <br/>
+            <p style="text-align:left; font-size: 15px;">
+                1.Unicode URI: <a href="https://symbl.cc/en/unicode-table/" target="_blank"> Goto Unicode </a>
+                <br/>
+                2.
+            </p>
+        </p>
+    </div>
+</body>
+</html>
